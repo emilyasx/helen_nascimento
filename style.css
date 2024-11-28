@@ -87,7 +87,7 @@ nav ul li a {
 
 /* Geral */
 .container{
-    padding: 70px;
+    padding: 35px;
     background-color: #ffffff ;
 }
 #sobre {
@@ -457,6 +457,7 @@ body {
     }
 
     .sobre-container {
+        padding: auto;
         flex-direction: column; /* Empilha os elementos no mobile */
         gap: 20px;
     }
@@ -467,7 +468,8 @@ body {
     }
 
     .sobre-foto img {
-        max-width: 100%; /* Imagem ocupa largura total */
+        max-width: 80%; /* Imagem ocupa largura total */
+
     }
 
     #especialidades h2 {
