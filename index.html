@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Helen Nascimento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo_principal"><img src="./img/logo-semfundo.png" alt="logo-principal"></div>
+        <div class="Cabeçalho">
+            <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#especialidades">Especialidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção principal -->
+    <section id="home">
+        <div class="hero">
+            <h1>Cuidado | Beleza | Saúde</h1>
+            <p>Cuidar de Si é unir a beleza e saúde em harmonia, refletindo bem estar pro dentro e por fora.</p>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <div class="container">
+        <section id="sobre">
+            <h2>Helen Nascimento</h2>
+            <div class="sobre-container">
+                <div class="sobre-foto">
+                    <img src="img/imagem-sobre.jpeg" alt="Foto da Helen Nascimento">
+                </div>
+                <div class="sobre-texto">
+                    <p>Dra. Helen Nascimento é especialista em estética e saúde, com foco em Harmonização Facial, aplicação de Botox e tratamentos faciais e corporais. Com anos de experiência, destaca-se por proporcionar autoestima e bem-estar aos seus pacientes por meio de atendimentos personalizados. <br>
+
+                        Sua abordagem em Harmonização Facial valoriza a naturalidade, realçando traços únicos e suavizando imperfeições com técnicas avançadas. Na aplicação de Botox, garante segurança e resultados eficazes no tratamento e prevenção de rugas e linhas de expressão. <br>
+                        
+                        Dra. Helen também oferece protocolos personalizados para rejuvenescimento, firmeza e hidratação da pele, aliando tecnologia moderna e técnicas manuais. Com compromisso constante com qualidade e atualização, ela entrega resultados que promovem beleza, confiança e cuidado integral.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+<!-- Seção Especialidades -->
+<section id="especialidades">
+    <h2>Especialidades</h2>
+    <div class="especialidades-container">
+        <div class="especialidade">
+            <img src="img/harmonização.png" alt="Harmonização Facial">
+            <h3>Harmonização Facial</h3>
+            <p>A harmonização facial melhora a simetria do rosto, suaviza as rugas e valoriza os traços naturais. É uma opção rápida, minimamente invasiva e com resultados que rejuvenescem e elevam a autoestima. Ideal para quem busca realçar a beleza de forma personalizada!</p>
+        </div>
+        <div class="especialidade">
+            <img src="img/botox.png" alt="Botox FullFace">
+            <h3>Botox FullFace</h3>
+            <p>O Botox Full Face é uma aplicação abrangente da toxina botulínica em diversas áreas do rosto, oferecendo resultados estéticos e funcionais. Confira os principais benefícios: Suavização de rugas e linhas de expressão, Reduz marcas na testa, entre as sobrancelhas, ao redor dos olhos (pés de galinha) e em outras regiões.</p>
+        </div>
+        <div class="especialidade">
+            <img src="img/imagem-2.jpg" alt="Tratamentos Faciais">
+            <h3>Tratamentos Faciais</h3>
+            <p>Tratamentos faciais mantêm a pele limpa, hidratada e rejuvenescida. Eles ajudam a prevenir acne, suavizar manchas, estimular colágeno e prevenir sinais de envelhecimento. Além disso, promovem relaxamento e bem-estar. Sua pele merece esse cuidado! </p>  
+        </div>
+    </div>
+</section>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="subject">Assunto:</label>
+            <input type="text" id="subject" name="subject" required>
+    
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+    
+            <button type="submit">Enviar</button>
+        </form>
+    </section>    
+
+    <!-- Rodapé -->
+    <footer>
+    <div class="footer-container">
+        <!-- Logotipo e informações -->
+        <div class="footer-logo">
+            <img src="img/logo-semfundo.png" alt="">
+            <h1>Helen Nascimento</h1>
+            <p>Biomédica Esteta</p>
+            <p>CRBM 123456 - DF</p>
+        </div>
+
+        <!-- Links de Acesso Rápido -->
+        <div class="footer-links">
+            <h3>Acesso Rápido</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#especialidades">Especialidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+
+        <!-- Redes Sociais -->
+        <div class="footer-social">
+            <h3>Social</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Termos e Condições -->
+    <div class="footer-bottom">
+        <p>Terms & Conditions</p>
+    </div>
+</footer>
+
+
+    <script>
+        // Scroll suave para as seções
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetSection = document.querySelector(this.getAttribute('href'));
+                window.scrollTo({
+                    top: targetSection.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+         // Função para animar seções ao entrar na tela
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, {
+        threshold: 0.1 // Ajusta o momento em que a animação será acionada (10% da seção visível)
+    });
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+
+     // Efeito de onda no botão de envio do formulário
+     const button = document.querySelector('form button');
+    button.addEventListener('click', function(e) {
+        e.preventDefault();
+        this.classList.add('clicked');
+        setTimeout(() => this.classList.remove('clicked'), 600); // Remove o efeito após 600ms
+    });
+
+    // Aplica animação de bounce nos ícones das redes sociais ao carregar a página
+    const socialLinks = document.querySelectorAll('.social-links a');
+    socialLinks.forEach((link, index) => {
+        setTimeout(() => {
+            link.classList.add('bounce');
+        }, index * 200); // Cada ícone será animado com um pequeno atraso
+    });
+
+    // Remove a animação após 3 segundos
+    setTimeout(() => {
+        socialLinks.forEach(link => link.classList.remove('bounce'));
+    }, 3000);
+    
+
+     // Validação simples de formulário
+     const form = document.querySelector('form');
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const name = document.querySelector('#name').value;
+        const email = document.querySelector('#email').value;
+        const message = document.querySelector('#message').value;
+        let valid = true;
+
+        if (name === '') {
+            alert('Por favor, insira seu nome.');
+            valid = false;
+        }
+
+        if (email === '' || !email.includes('@')) {
+            alert('Por favor, insira um e-mail válido.');
+            valid = false;
+        }
+
+        if (message === '') {
+            alert('Por favor, insira sua mensagem.');
+            valid = false;
+        }
+
+        if (valid) {
+            alert('Formulário enviado com sucesso!');
+            // Aqui você pode fazer um POST para enviar os dados para o servidor
+        }
+    });
+</script>
+    
+</body>
+</html>
